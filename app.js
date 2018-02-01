@@ -14,6 +14,9 @@ var count_reset_movement = require('./routes/manage_movement/count_reset_movemen
 var count_up_movement = require('./routes/manage_movement/count_up_movement');
 var delete_movement = require('./routes/manage_movement/delete_movement');
 var make_movement = require('./routes/manage_movement/make_movement');
+var CreateAnimal = require('./routes/manage_animal/CreateAnimal');
+var DeleteAnimal = require('./routes/manage_animal/DeleteAnimal');
+var GetAnimalInfo = require('./routes/manage_animal/GetAnimalInfo');
 
 var app = express();
 
@@ -50,6 +53,9 @@ app.use('/count_reset_movement', count_reset_movement);
 app.use('/count_up_movement', count_up_movement);
 app.use('/delete_movement', delete_movement);
 app.use('/make_movement', make_movement);
+app.use('/CreateAnimal', CreateAnimal);
+app.use('/DeleteAnimal', DeleteAnimal);
+app.use('/GetAnimalInfo', GetAnimalInfo);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
