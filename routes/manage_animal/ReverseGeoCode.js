@@ -25,7 +25,7 @@ app.get('/reversegeocode', function (req, res) {
     });
 });
 
-module.exports = router;
+module.exports = app;
 
 /*app.listen(3000, function () {
     console.log('http://127.0.0.1:3000/reversegeocode?query=주소 app listening on port 3000!');

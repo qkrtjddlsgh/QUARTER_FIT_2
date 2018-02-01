@@ -25,7 +25,7 @@ app.get('/geocode', function (req, res) {
     });
 });
 
-module.exports = router;
+module.exports = app;
 
 /*app.listen(3000, function () {
     console.log('http://127.0.0.1:3000/geocode?query=주소 app listening on port 3000!');
