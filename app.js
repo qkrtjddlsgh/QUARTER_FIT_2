@@ -17,6 +17,8 @@ var make_movement = require('./routes/manage_movement/make_movement');
 var CreateAnimal = require('./routes/manage_animal/CreateAnimal');
 var DeleteAnimal = require('./routes/manage_animal/DeleteAnimal');
 var GetAnimalInfo = require('./routes/manage_animal/GetAnimalInfo');
+var GeoCode = require('./routes/manage_animal/GeoCode');
+var ReverseGeoCode = require('./routes/manage_animal/ReverseGeoCode');
 
 var app = express();
 
@@ -56,6 +58,8 @@ app.use('/make_movement', make_movement);
 app.use('/CreateAnimal', CreateAnimal);
 app.use('/DeleteAnimal', DeleteAnimal);
 app.use('/GetAnimalInfo', GetAnimalInfo);
+app.use('/GeoCode', GeoCode);
+app.use('/ReverseGeoCode', ReverseGeoCode);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
