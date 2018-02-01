@@ -1,6 +1,6 @@
 // 본 예제는 Node.js 에서 주소좌표변환 api를 호출하는 예제입니다. (express 모듈 설치 필요)
 var express = require('express');
-var app = express();
+var app = express.Router();
 
 var client_id = 'Uuri286TO_0SEQFRbb7t';
 var client_secret = 'BRnt6tr_Vt';
@@ -24,6 +24,8 @@ app.get('/geocode', function (req, res) {
         }
     });
 });
+
+module.exports = router;
 
 /*app.listen(3000, function () {
     console.log('http://127.0.0.1:3000/geocode?query=주소 app listening on port 3000!');
